@@ -1,0 +1,109 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userEmail": "jd@gmail.com",
+    "userPassword": "User123!"
+}
+HTTP/1.1 200 OK
+Date: Wed, 11 Jan 2023 17:10:56 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 348
+ETag: W/"15c-xcOuQq622v3lZO0/+8tykWzf/j8"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I1NWMyZTU2OGMzZTlmYjFlYjdhMTIiLCJ1c2VyRW1haWwiOiJqZEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo2NzM4MjkzNzgxLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjczNDU3MDU2LCJleHAiOjE3MDUwMTQ2NTZ9.-lfa6TaLvJytr3wXTLsi5zXVDRDvZnnmtz9HecbkS2g",
+    "userId": "63b55c2e568c3e9fb1eb7a12",
+    "message": "Login Successfully"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/add-product
+Proxy:			<none>
+Request params:	productName=T-Shirt
+				productAddedBy=63b55c2e568c3e9fb1eb7a12
+				productCategory=fashion
+				productSubCategory=shirts
+				productPrice=11500
+				productDescription=Adidas Originals
+				productFor=women
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: application/json; name = productImage; filename = images.png
+				Content-Type: application/octet-stream
+
+				src\main\java\Files\images.png
+Body:			<none>
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "country": "Poland",
+            "productOrderedId": null
+        }
+    ]
+}
+HTTP/1.1 401 Unauthorized
+Date: Wed, 11 Jan 2023 17:10:58 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 64
+ETag: W/"40-OA4ZisnDMYQXAk/ZYKwVHFgkyVA"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "type": "Invalid",
+    "message": "Access denied. No token provided."
+}
